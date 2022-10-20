@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.accordion{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #000;
+}
+.accordion-item{
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.accordion-title{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #aba1a1;
+}
+.accordion-title::after{
+    content: '+';
+    font-size: 20px;
+    margin-left: auto;
+}
+.active-header::after{
+    content: "-";
+}
+.accordion-answer{
+    background: #e6dddd;
+    max-height: 0;
+   overflow: hidden;
+   transition: 1000ms ease max-height;
+}
